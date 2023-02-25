@@ -19,7 +19,7 @@ uses
      memscan,plugin, hotkeyhandler,frmProcessWatcherUnit, newkernelhandler,
      debuggertypedefinitions, commonTypeDefs, betterControls;
 
-const ceversion=7.5;
+const ceversion=1.0;
 {$ifdef altname}  //i'd use $MACRO ON but fpc bugs out
   strCheatEngine='Runtime Modifier'; //if you change this, also change it in first.pas
   strCheatTable='Code Table';   //because it contains code.... duh.....
@@ -30,7 +30,7 @@ const ceversion=7.5;
   strMyCheatTables='My Mod Tables';
   strSpeedHack='Speedmodifier';
 {$else}
-  strCheatEngine='Cheat Engine';
+  strCheatEngine='BLS Engine';
   strCheatTable='Cheat Table';
   strCheatTableLower='cheat table';
   strCheat='Cheat';
@@ -41,7 +41,7 @@ const ceversion=7.5;
 {$endif}
 
 resourcestring
-  cename = strCheatEngine+' 7.5';
+  cename = strCheatEngine+' 1.0';
   rsCheatEngine = strCheatEngine;
   rsPleaseWait = 'Please Wait!';
 

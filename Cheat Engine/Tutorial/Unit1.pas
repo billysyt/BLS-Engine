@@ -47,12 +47,12 @@ resourcestring
               ''+#13#10+
               'This tutorial will teach you the basics of cheating in video games. It will also show you foundational aspects of using Cheat Engine (or CE for short). Follow the steps below to get started.'+#13#10+
               ''+#13#10+
-              '1: Open Cheat Engine if it currently isn''t running.'+#13#10+
+              '1: Open BLS Engine if it currently isn''t running.'+#13#10+
               '2: Click on the "Open Process" icon (it''s the top-left icon with the computer on it, below "File".).'+#13#10+
               '3: With the Process List window now open, look for this tutorial''s process in the list. It will look something like "00001F98-Tutorial-x86_64.exe" or "0000047C-Tutorial-i386.exe". (The first 8 numbers/letters will probably be different.)'+#13#10+
               '4: Once you''ve found the process, click on it to select it, then click the "Open" button. (Don''t worry about all the other buttons right now. You can learn about them later if you''re interested.)'+#13#10+
               ''+#13#10+
-              'Congratulations! If you did everything correctly, the process window should be gone with Cheat Engine now attached to the tutorial (you will see the process name towards the top-center of CE).'+#13#10+
+              'Congratulations! If you did everything correctly, the process window should be gone with BLS Engine now attached to the tutorial (you will see the process name towards the top-center of CE).'+#13#10+
               ''+#13#10+
               'Click the "Next" button below to continue, or fill in the password and click the "OK" button to proceed to that step.)'+#13#10+
               ''+#13#10+
@@ -115,7 +115,7 @@ begin
       while (i>0) and (FullProcessname[i-1]<>'\') do dec(i);
       processname:=copy(FullProcessName,i,length(FullProcessname)-i+1);
 
-      if (uppercase(processname)='CHEAT ENGINE SERVER.EXE') or (uppercase(processname)='CESERVER.EXE') or (uppercase(processname)='CHEATENGINE.EXE') or (uppercase(processname)='CHEAT ENGINE.EXE') then
+      if (uppercase(processname)='BLS ENGINE SERVER.EXE') or (uppercase(processname)='CESERVER.EXE') or (uppercase(processname)='CHEATENGINE.EXE') or (uppercase(processname)='CHEAT ENGINE.EXE') then
       begin
         button1.Enabled:=true;
         timer1.enableD:=false;
